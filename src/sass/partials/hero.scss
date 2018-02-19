@@ -274,3 +274,50 @@
     }
     
 } /* @supports */
+
+
+/* After Event */
+
+#hero.hero-followup {
+	background-image: url(images/hero-followup-candice-simmons.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center 70%;
+}
+
+#hero.hero-followup #hero-buttons {
+	line-height: initial;
+	position: absolute;
+	width: 100%;
+	top: 70%;
+	left: 0;
+	text-align: center;
+}
+
+#hero.hero-followup .hero-button {
+	display: inline-block;
+	font-size: 1rem;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+#hero.hero-followup .hero-button a {
+	display: block;
+	padding: .5rem 1rem;
+	line-height: initial;
+	border-radius: 3px;
+	color: #fff;
+	text-shadow: none;
+	background: rgba(0,0,0,.7);
+	border: 1px solid #fff;
+	box-shadow: 0 .1rem .3rem rgba(0,0,0,.8);
+	position: relative;
+	top: 0;
+}
+
+#hero.hero-followup .hero-button a:hover {
+	background: #f00;
+	border: 1px solid #f00;
+	color: #fff;
+	top: -2px;
+}
