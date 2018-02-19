@@ -1,0 +1,79 @@
+/* Customize the theme a bit */
+
+html {
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-size: 1.25rem;
+	background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 900;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	max-width: 800px;
+	color: #e62b1e;
+}
+
+@media screen and (min-width: 375px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+h2 {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	color: #000;
+	max-width: 800px;
+}
+
+h3 {
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 700;
+	font-size: 1.3rem;
+	color: #000;
+	margin-bottom: 1.3rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    padding-bottom: 1.875rem;
+}
+
+a:link,
+a:hover,
+a:focus,
+a:visited {
+	border: none;
+	box-shadow: none;
+	background: none;
+}
+
+p a:link {
+	text-decoration: underline;
+}
+
+a.cl-card {
+	box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.1);
+}
+
+.page .content-area article .entry-content {
+	padding-right: 0;
+}
+
+#breadcrumb,
+.main-title,
+footer {
+	display: none;
+}

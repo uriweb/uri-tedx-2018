@@ -1,0 +1,22 @@
+/* Component Library */
+
+    
+.cl-card h1 {
+    font-weight: 600 !important;
+}
+
+.cl-card p {
+    font-size: 1rem !important;
+}
+
+.cl-card .cl-button,
+.cl-card .cl-button {
+    color: #555 !important;
+}
+
+.cl-card:hover .cl-button,
+.cl-card:focus .cl-button {
+    background: #e62b1e !important;
+    border-top: 1px solid #e62b1e !important;
+    color: #fff !important;
+}

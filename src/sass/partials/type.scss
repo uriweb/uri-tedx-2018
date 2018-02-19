@@ -1,0 +1,50 @@
+/* Type */
+
+
+.centered-title {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    color: #e62b1e;
+    margin-bottom: 4rem;
+}
+
+.tedx-button {
+    
+    display: inline-block;
+    line-height: 2rem;
+    font-size: .8rem;
+    color: #e62b1e;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 0 .7rem;
+    margin: 0;
+    background: #fff;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 .1rem .3rem rgba(0,0,0,.5);
+    }
+    
+}
+
+section.headline p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #333;
+}
+
+section#licensing {
+    
+    margin: 0;
+    padding: 1.5rem 0;
+
+    p {
+        font-size: .8rem;
+        color: #999;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
