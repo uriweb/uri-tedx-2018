@@ -1,19 +1,22 @@
 {
   "name": "uri-tedx-2018",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "The WordPress theme for TEDxURI 2018, a child theme of URI 2017",
   "template": "uri-2017",
   "themeName": "TEDxURI 2018",
   "main": "index.php",
-  "homepage": "https://www.uri.edu",
-  "repository": "https://github.com/uriweb/uri-modern",
+  "homepage": "https://www.uri.edu/tedx",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/uriweb/uri-tedx-2018.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "URI",
   "authorHuman": "Brandon Fuller <bjcfuller@uri.edu>",
-  "license": "GPL-2.0-or-later",
-  "licenseURI": "http://www.gnu.org/licenses/gpl-2.0.html",
+  "license": "GPL-3.0",
+  "licenseURI": "http://www.gnu.org/licenses/gpl.html",
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "gulp-changed": "^1.3.2",
