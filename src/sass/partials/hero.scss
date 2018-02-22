@@ -13,11 +13,6 @@
     text-align: center;
     text-shadow: 0 0 10px rgba(0,0,0,.5);
 
-    &:hover,
-    &:focus {
-        cursor: pointer;
-    }
-
     div.title {
         display:inline-block;
         white-space:nowrap;
@@ -147,12 +142,10 @@
 }
 
 
-/* Run animations if browser supports it */
+/* Run animations if browser supports it
 
-@supports ((animation: initial) and (filter: initial) and (backdrop: initial)) {
+@supports ((animation: initial) and (filter: initial)) {
     
-    /* Declare keyframes first */
-
     @keyframes fadeOutScreen {
         0% { opacity: 1; }
         100% { opacity: 0; }
@@ -272,7 +265,9 @@
         
     }
     
-} /* @supports */
+} 
+
+*/
 
 
 /* After Event */
