@@ -20,7 +20,7 @@
     }
 
     &:nth-child(1) h1 {
-        background: linear-gradient(45deg, #e62b1e, #ee5705);
+        background: linear-gradient(45deg, $tedred, #ee5705);
     }
 
     &:nth-child(2) h1 {
@@ -116,7 +116,7 @@
 }
 
 .live-event-tickets:nth-child(1) a.cl-button.live:hover {
-    background: linear-gradient(45deg, #e62b1e, #ee5705) !important;
+    background: linear-gradient(45deg, $tedred, #ee5705) !important;
     cursor: pointer;
     color: #fff !important;
 }
@@ -204,7 +204,32 @@ ul.program {
         }
 
         span {
-            color: #e62b1e;
+            color: $tedred;
+        }
+        
+    }
+    
+}
+
+#speaker-videos {
+    
+    .cl-card {
+        background: #222;
+        
+        h3 {
+            color: #fff;
+            margin-bottom: 0;
+        }
+        
+        p {
+            color: $tedred;
+            font-size: 1.5rem !important;
+            line-height: 1.2;
+        }
+        
+        .cl-button {
+            border-top: 1px solid #444;
+            color: #fff !important;
         }
         
     }

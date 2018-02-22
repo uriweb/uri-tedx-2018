@@ -34,7 +34,7 @@ section.next-promo {
         padding: 4rem calc(3% + 3rem);
         text-align: right;
         background: #fff;
-        color: #e62b1e;
+        color: $tedred;
         font-size: 1.5rem;
         font-weight: 600;
     }
@@ -47,7 +47,7 @@ section.next-promo {
         top: calc(50% - .8rem);
         width: 0;
         height: 0;
-        border-left: 1.5rem solid #e62b1e;
+        border-left: 1.5rem solid $tedred;
         border-top: .8rem solid transparent;
         border-bottom: .8rem solid transparent;
         transition: border-left .1s ease-in-out;
@@ -55,7 +55,7 @@ section.next-promo {
 
     a:hover {
         color: #fff;
-        background: #e62b1e;
+        background: $tedred;
     }
 
     a:hover:after {

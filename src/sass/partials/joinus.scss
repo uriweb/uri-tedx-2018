@@ -43,7 +43,7 @@ section#join-us {
 
     label:hover {
         cursor: pointer;
-        color: #e62b1e;
+        color: $tedred;
     }
 
     iframe {
@@ -93,7 +93,7 @@ section#join-us {
     &.live {
         color: #fff;
         border: none;
-        background: #e62b1e;
+        background: $tedred;
     }
 
     &:hover,

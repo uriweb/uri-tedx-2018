@@ -51,7 +51,7 @@
     #play-teaser span {
         position: relative;
         text-shadow: none;
-        color: #e62b1e;
+        color: $tedred;
         padding: .5rem 1rem;
         background: #fff;
         box-shadow: 0 0 10px rgba(0,0,0,.5);
@@ -60,7 +60,7 @@
 
     &:hover #play-teaser span,
     &:focus #play-teaser span {
-        background: #e62b1e;
+        background: $tedred;
         color: #fff;
     }
     
