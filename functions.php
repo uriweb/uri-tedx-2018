@@ -69,6 +69,15 @@ if(function_exists("register_field_group"))
 				'formatting' => 'none',
 				'maxlength' => '',
 			),
+            array (
+				'key' => 'field_5a971f083fd32',
+				'label' => 'Description',
+				'name' => 'description',
+				'type' => 'wysiwyg',
+				'required' => '0',
+				'toolbar' => 'basic',
+				'media_upload' => 'no',
+			),
 			array (
 				'key' => 'field_5a970ad1efcb6',
 				'label' => 'Youtube ID',
