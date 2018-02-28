@@ -61,16 +61,21 @@ function onYouTubePlayerAPIReady() {
      * Fire when player is ready
      */
     function onTeaserReady(event) {
-        var button, tw, exit;
+        var button1, button2, tw, exit;
         
         //console.log('ready');
         
         tw = document.getElementById('teaser-wrapper');
-                        
-        button = document.getElementById('play-yt');
-        button.addEventListener('click', function() {
-            activateTeaser(tw, event);
-        });
+
+        button1 = document.querySelector('#play-teaser span');
+        if ( button1 !== null) {
+            button1.addEventListener('click', activateTeaser.bind(null,tw, event));
+        }
+        
+        button2 = document.querySelector('#play-yt a');
+        if ( button2 !== null) {
+            button2.addEventListener('click', activateTeaser.bind(null,tw, event));
+        }
         
         exit = document.getElementById('teaser-exit');
         exit.addEventListener('click', function(e){
