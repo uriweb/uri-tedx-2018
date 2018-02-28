@@ -61,14 +61,14 @@ function onYouTubePlayerAPIReady() {
      * Fire when player is ready
      */
     function onTeaserReady(event) {
-        var hero, tw, exit;
+        var button, tw, exit;
         
         //console.log('ready');
         
         tw = document.getElementById('teaser-wrapper');
                         
-        hero = document.getElementById('hero');
-        hero.addEventListener('click', function() {
+        button = document.getElementById('play-yt');
+        button.addEventListener('click', function() {
             activateTeaser(tw, event);
         });
         

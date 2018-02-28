@@ -11,3 +11,11 @@ Once you've done that, get set up with TEDxURI 2018:
 1. Install into your WordPress wp-content/themes directory
 2. Activate it as your site's theme
 3. Configure it with Customizer
+
+## Theme details
+
+Contributors: Brandon Fuller  
+Tags: themes  
+Requires at least: 4.0  
+Tested up to: 4.9  
+Stable tag: 1.0.0  
