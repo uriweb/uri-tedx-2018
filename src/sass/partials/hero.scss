@@ -288,10 +288,20 @@
 }
 
 #hero.hero-followup .hero-button {
-	display: inline-block;
+	display: block;
 	font-size: 1rem;
 	text-transform: uppercase;
 	line-height: 1;
+    margin: 0 auto .5rem;
+    width: 90%;
+}
+
+@media screen and (min-width: 600px) {
+    #hero.hero-followup .hero-button {
+        display: inline-block;
+        margin: 0;
+        width: auto;
+    }
 }
 
 #hero.hero-followup .hero-button a {

@@ -39,6 +39,13 @@
                 <p class="talk-description"><?php the_field('description'); ?></p>
                 <?php } ?>
             </div>
+            <div class="social-media-integration">
+                <span class="share-button">
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="tedxuri" data-show-count="false">Tweet</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </span>
+                <span class="share-button"><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></span>
+            </div>
         </section>
                 
         <section>
