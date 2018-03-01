@@ -71,7 +71,9 @@
         <?php } ?>
         </section>
         
-        <section id="licensing" style="border-top: 1px solid #ddd;">
+        <section class="next-promo breakout"><a href="https://www.uri.edu/tedx/watch/">Browse all our talks</a></section>
+        
+        <section id="licensing">
             <p>This independent TEDx event is operated under license from TED.</p>
         </section>
 
