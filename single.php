@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package uri-2017
+ * @package uri-tedx-2018
  */
 
 get_header(); ?>

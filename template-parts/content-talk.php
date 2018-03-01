@@ -26,14 +26,10 @@
                 <?php if(get_field('name')) { ?>
                 <h1 class="talk-speaker">
                     <?php
-                    
-                    the_field('name');
-                                             
-                    $categories = get_the_category();
-                    if ( !empty($categories) ) {
-                        echo ' <span class="talk-event">at ' . esc_html( $categories[0]->name ) . '</span>';
-                    }
-                    ?>
+                    the_field('name');        
+                    if(get_field('event')) { ?>
+                    <span class="talk-event">at <?php the_field('event'); ?></span>
+                    <?php } ?>
                 </h1>
                 <?php } ?>
                 <?php if(get_field('title')) { ?>
@@ -47,7 +43,11 @@
                 
         <section>
             <div class="about-this-speaker">
-                <div class="headshot"></div>
+                <?php if(get_the_post_thumbnail()) { ?>
+                <div class="headshot">
+                    <?php the_post_thumbnail('medium'); ?>
+                </div>
+                <?php } ?>
                 <div class="bio">
                     <?php if(get_field('name')) { ?>
                     <h1 class="bio-name"><?php the_field('name'); ?></h1>
@@ -69,6 +69,10 @@
                 <?php the_field('transcript'); ?>
             </div>
         <?php } ?>
+        </section>
+        
+        <section id="licensing" style="border-top: 1px solid #ddd;">
+            <p>This independent TEDx event is operated under license from TED.</p>
         </section>
 
 	</div><!-- .entry-content -->
