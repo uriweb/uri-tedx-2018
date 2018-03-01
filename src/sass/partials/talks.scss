@@ -16,7 +16,7 @@ body.single-talk {
     }
     
     .talk-info {
-        margin: 2rem 0;
+        margin: 2rem 0 0;
     }
     
     .talk-speaker {
@@ -41,6 +41,14 @@ body.single-talk {
     .talk-description {
         font-size: 1.4rem;
         font-weight: 300;
+    }
+    
+    .social-media-integration {
+        margin-bottom: 2rem;
+    }
+    
+    .share-button {
+        margin-right: .5rem;
     }
     
     .about-this-speaker {
