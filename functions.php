@@ -24,7 +24,7 @@ function uri_tedx_2018_create_talk_post_type() {
         'show_in_menu' => true,
         'capability_type' => 'post',
         'hierarchical' => true,
-        'rewrite' => array('slug' => 'talk'),
+        'rewrite' => array('slug' => 'talks'),
         'query_var' => true,
         'has_archive' => true,
         'exclude_from_search' => false,
@@ -32,8 +32,20 @@ function uri_tedx_2018_create_talk_post_type() {
         'taxonomies' => array('post_tag', 'category'),
         'labels' => array(
             'name' => __( 'Talks' ),
-            'singular_name' => __( 'Talk' )
+            'singular_name' => __( 'Talk' ),
+            'add_new'            => __( 'Add New', 'Talk' ),
+            'add_new_item'       => __( 'Add New Talk' ),
+            'edit_item'          => __( 'Edit Talk' ),
+            'new_item'           => __( 'New Talk' ),
+            'all_items'          => __( 'All Talks' ),
+            'view_item'          => __( 'View Talk' ),
+            'search_items'       => __( 'Search talks' ),
+            'not_found'          => __( 'No talks found' ),
+            'not_found_in_trash' => __( 'No talks found in the Trash' ),
+            'parent_item_colon'  => '',
+            'menu_name'          => 'Talks'
         ),
+        'menu_icon' => 'dashicons-testimonial',
     )
   );
 }

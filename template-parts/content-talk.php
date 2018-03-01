@@ -24,7 +24,17 @@
         <section>
             <div class="talk-info">
                 <?php if(get_field('name')) { ?>
-                <h1 class="talk-speaker"><?php the_field('name'); ?></h1>
+                <h1 class="talk-speaker">
+                    <?php
+                    
+                    the_field('name');
+                                             
+                    $categories = get_the_category();
+                    if ( !empty($categories) ) {
+                        echo ' <span class="talk-event">at ' . esc_html( $categories[0]->name ) . '</span>';
+                    }
+                    ?>
+                </h1>
                 <?php } ?>
                 <?php if(get_field('title')) { ?>
                 <h2 class="talk-title"><?php the_field('title'); ?></h2>
