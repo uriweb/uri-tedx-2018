@@ -40,11 +40,38 @@
                 <?php } ?>
             </div>
             <div class="social-media-integration">
-                <span class="share-button">
+                <div class="smi-widget share-button share-twitter">
                     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="tedxuri" data-show-count="false">Tweet</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </span>
-                <span class="share-button"><iframe src="https://www.facebook.com/plugins/share_button.php?href=<?php echo urlencode(utf8_encode(get_permalink())); ?>&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></span>
+                </div>
+                <div class="smi-widget share-button share-facebook"><iframe src="https://www.facebook.com/plugins/share_button.php?href=<?php echo urlencode(utf8_encode(get_permalink())); ?>&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+                <div class="smi-widget yt-statistics">
+                <?php
+
+                /**
+                 * Get the video data
+                 */
+                $api = "AIzaSyC-6FV_g5x8dSIBNHW3kEh3VP8lu9qnb2c";
+                $vid = get_field('ytid');
+                $JSON = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=" . $vid . "&key=" . $api );
+                $json_data = json_decode($JSON, true);
+
+                $views = $json_data['items'][0]['statistics']['viewCount'];
+                $likes = $json_data['items'][0]['statistics']['likeCount'];
+                
+                /* View Count */
+                if ($views) {
+                    $view_label = $views == 1 ? 'view' : 'views';
+                    echo '<span class="yt-stat yt-views">' . number_format($views) . ' ' . $view_label .'</span>';
+                }
+                
+                /* Like Count */
+                if ($likes || $likes == 0) {
+                    echo '<span class="yt-stat yt-likes">' . number_format($likes) . '</span>';
+                }
+
+                ?>
+                </div>
             </div>
         </section>
                 
