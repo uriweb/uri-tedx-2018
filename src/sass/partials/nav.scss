@@ -99,6 +99,15 @@
     }
     
 }
+
+body.ln-about #ln-about,
+body.ln-speakers #ln-speakers,
+body.ln-watch #ln-watch,
+body.ln-team #ln-team {
+    a {
+        color: $tedred;
+    }
+}
     
 
 @media screen and (min-width: 700px) {
