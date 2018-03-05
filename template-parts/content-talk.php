@@ -54,9 +54,9 @@
                     /**
                      * Get the video data
                      */
-                    $api = "AIzaSyC-6FV_g5x8dSIBNHW3kEh3VP8lu9qnb2c";
+                    $key = "AIzaSyC-6FV_g5x8dSIBNHW3kEh3VP8lu9qnb2c";
                     $vid = get_field('ytid');
-                    $JSON = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=" . $vid . "&key=" . $api );
+                    $JSON = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=" . $vid . "&key=" . $key );
                     $json_data = json_decode($JSON, true);
 
                     $views = $json_data['items'][0]['statistics']['viewCount'];
@@ -65,13 +65,14 @@
                     /* View Count */
                     if ($views) {
                         $view_label = $views == 1 ? 'view' : 'views';
-                        echo '<span class="yt-stat yt-views">' . number_format($views) . ' ' . $view_label .'</span>';
+                        echo '<span class="yt-stat yt-views"><strong>' . number_format($views) . '</strong> ' . $view_label .'</span>';
                     }
 
-                    /* Like Count */
+                    /* Like Count
                     if ($likes || $likes == 0) {
-                        echo '<span class="yt-stat yt-likes">' . number_format($likes) . '</span>';
+                        echo '<span class="yt-stat yt-likes" title="Likes on YouTube">' . number_format($likes) . '</span>';
                     }
+                    */
 
                     ?>
                     </div>
