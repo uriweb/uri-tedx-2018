@@ -99,6 +99,15 @@
     }
     
 }
+
+body.ln-about #ln-about,
+body.ln-speakers #ln-speakers,
+body.ln-watch #ln-watch,
+body.ln-team #ln-team {
+    a {
+        color: $tedred;
+    }
+}
     
 
 @media screen and (min-width: 700px) {
@@ -126,7 +135,7 @@
             color: #555;
             text-transform: uppercase;
             font-weight: 600;
-            font-size: .9rem;
+            font-size: .8rem;
             line-height: 35px;
             transition: all .2s ease-in-out;
         }
@@ -169,7 +178,7 @@
     
         li {
             line-height: 40px;
-            font-size: 1rem;
+            font-size: .9rem;
         }
         
     }

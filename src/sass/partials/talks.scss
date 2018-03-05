@@ -47,8 +47,45 @@ body.single-talk {
         margin-bottom: 2rem;
     }
     
+    .social-media-integration:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .smi-widget {
+        float: left;
+        display: block;
+        line-height: 28px;
+        height: 28px;
+        position: relative;
+    }
+    
     .share-button {
-        margin-right: .5rem;
+        margin: 0 .5rem .5rem 0;
+    }
+    
+    .share-facebook {
+        margin-right: 1.2rem;
+    }
+    
+    .yt-stat {
+        color: #555;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .yt-stat strong {
+        color: #000;
+        font-size: 1.2rem;
+    }
+    
+    .yt-stat.yt-likes {
+        padding-left: 16px;
+        background-image: url('images/love.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: auto 12px;
     }
     
     .about-this-speaker {

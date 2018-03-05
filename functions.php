@@ -13,6 +13,19 @@ add_action( 'wp_enqueue_scripts', 'uri_tedx_2018_enqueues' );
 
 
 /**
+ * Add page slug to body class list in the format 'ln-{slug}'
+ */
+function uri_tedx_2018_add_slug_body_class( $classes ) {
+    global $post;
+    if ( isset( $post ) ) {
+        $classes[] = 'ln-' . $post->post_name;
+    }
+    return $classes;
+    }
+add_filter( 'body_class', 'uri_tedx_2018_add_slug_body_class' );
+
+
+/**
  * Set up Talks post type and custom fields
  */
 function uri_tedx_2018_create_talk_post_type() {

@@ -6,6 +6,7 @@
 // Create this in the global scope so the YouTube API can call it locally.
 var tedXURICreateTeaserVid;
 function onYouTubePlayerAPIReady() {
+    CLCreateYouTubePlayers();
     tedXURICreateTeaserVid();
 }
 
