@@ -2,6 +2,8 @@
 
 TEDxURI 2018 is a WordPress theme designed for the University of Rhode Island.  It is a child theme of [uri-2017](https://bitbucket.org/uriweb/uri-2017).
 
+**As of July 3, 2018, this theme has been replaced by [TEDxURI](https://github.com/uriweb/uri-tedx).**
+
 ## How do I get set up?
 
 TEDxURI 2018 is a child theme.  Make sure you have the [uri-2017](https://bitbucket.org/uriweb/uri-2017) theme installed before continuing.
